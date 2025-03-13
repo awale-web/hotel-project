@@ -1,0 +1,17 @@
+.home {
+  text-align: center;
+  padding: 50px;
+  background-image: url("../assets/hotel.jpg"); /* Add an image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 20px;
+}
