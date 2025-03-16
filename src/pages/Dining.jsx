@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Dining.css"; // Make sure you have this CSS file for styling
+import "../style/Dining.css"; // Ensure this CSS file exists
 
 const Dining = () => {
   return (
@@ -10,13 +10,13 @@ const Dining = () => {
       {/* Breakfast Area */}
       <div className="dining-section">
         <h2>Breakfast Seating</h2>
-        <img src="/breakfast-seating.jpg" alt="Breakfast Seating" />
+        <img src="/breakfast-seating.jpg" alt="breakfast seating" />
       </div>
 
       {/* Buffet Section */}
       <div className="dining-section">
-        <h2>Breakfast Buffer</h2>
-        <img src="/buffer.jpg" alt="Breakfast Buffer" />
+        <h2>Breakfast Buffet</h2>
+        <img src="/buffer.jpg" alt="Breakfast Buffet" />
       </div>
 
       {/* Popular Dishes */}
@@ -28,17 +28,15 @@ const Dining = () => {
             <p>Grilled Steak</p>
           </div>
           <div className="dish">
-            <img src="/Italian-pasta.jpg" alt="Pasta Dish" />
+            <img src="/italian-pasta.jpg" alt="Pasta Dish" />
             <p>Italian Pasta</p>
           </div>
           <div className="dish">
-            <img src="/dish desert.webp" alt="Dessert" />
+            <img src="/dish-dessert.webp" alt="Dessert" />
             <p>Delicious Dessert</p>
           </div>
         </div>
       </div>
-
-     
     </div>
   );
 };
