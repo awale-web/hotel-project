@@ -1,33 +1,32 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
+import DeluxeRoom from "./pages/Deluxe";
+import ExecutiveRoom from "./pages/Executive";
+import PresidentialRoom from "./pages/Presidential";
+import Navbar from "./components/Navbar"; // Ensure this file exists
 import Dining from "./pages/Dining";
-import Rooms from "./pages/Rooms";
-import Deluxe from "./pages/Deluxe";
-import Executive from "./pages/Executive";
-import Presidential from "./pages/Presidential";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import About from "./pages/About"; // Fixed import
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar /> {/* Navigation bar inside Router */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
         <Route path="/dining" element={<Dining />} />
-        <Route path="/rooms" element={<Rooms />} />
-        <Route path="/rooms/deluxe" element={<Deluxe />} />
-        <Route path="/rooms/executive" element={<Executive />} />
-        <Route path="/rooms/presidential" element={<Presidential />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} /> {/* Fixed case issue */}
+        
+        {/* Rooms & Suites dropdown pages */}
+        <Route path="/rooms/deluxe" element={<DeluxeRoom />} />
+        <Route path="/rooms/executive" element={<ExecutiveRoom />} />
+        <Route path="/rooms/presidential" element={<PresidentialRoom />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

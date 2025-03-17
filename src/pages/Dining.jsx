@@ -19,25 +19,8 @@ const Dining = () => {
         <img src="/buffer.jpg" alt="Breakfast Buffet" />
       </div>
 
-      {/* Popular Dishes */}
-      <div className="dining-section">
-        <h2>Our Special Dishes</h2>
-        <div className="dishes">
-          <div className="dish">
-            <img src="/dish steak.jpg" alt="Steak Dish" />
-            <p>Grilled Steak</p>
-          </div>
-          <div className="dish">
-            <img src="/italian-pasta.jpg" alt="Pasta Dish" />
-            <p>Italian Pasta</p>
-          </div>
-          <div className="dish">
-            <img src="/dish-dessert.webp" alt="Dessert" />
-            <p>Delicious Dessert</p>
-          </div>
-        </div>
       </div>
-    </div>
+    
   );
 };
 
